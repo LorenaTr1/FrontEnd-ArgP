@@ -1,0 +1,88 @@
+<app-menu></app-menu>
+<section id="proyectos">
+    <div class="container proyecto">
+        <div class="proyecto-header">
+            <h1 class="section-title"><span>Pro</span>yectos</h1>
+        </div>
+        <div class="pyt2">
+            <p>En esta sección se mostrarán todos los proyectos que realicé, los cuales por el momento no tengo demasiados o no estan terminados.
+                <br>
+                (Se agrega el nombre del proyecto y debajo el enlace del mismo).
+            </p>
+        </div>
+        <div class="col-lg-2">
+            <button type="button" class="botonx" routerLink="/nuevoproyecto" *ngIf="isLogged">
+                AGREGAR PROYECTO
+            </button>
+        </div>
+        <div class="all-proyectos">
+            <div class="proyecto-item">
+                <div class="col-lg-11">
+                    <div class="table">
+                        <div class="pyt3">
+                            <div *ngFor="let Proyecto of proyecto" class="iter">
+                                <div class="pyt4">
+                                  <div class="flex">
+                                    <h3>{{Proyecto.nombreE | uppercase}}</h3>
+                                    <a class="enlace" target="_blank" href="{{Proyecto.descripcionE}}">{{Proyecto.descripcionE}}</a>
+                                  </div>
+                                  <div class="pyt5">
+                                      <div *ngIf="isLogged">
+                                          <button class="btn btn-light" routerLink="/editproyecto/{{Proyecto.id}}">
+                                              <i class="bi bi-pencil-fill"></i>EDITAR</button>
+                                          </div>
+                                            
+                                      <div *ngIf="isLogged">
+                                          <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+                                              <i class="bi bi-trash3"></i>BORRAR</button>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section class="container" id="work">
+    <div class="row">
+      <h2>Proyectos</h2>
+       <div class="work__boxes">
+
+         Each div with the work__box class is a project.
+
+        <div class="work__box">
+          <div class="work__text">
+            <h3>Nombre del proyecto</h3>
+            <p>
+              Aún no tengo proyectos realizados. Pero serán mostrados en esta sección
+            </p>
+            <ul class="work__list">
+              <li>Html</li>
+              <li>Css</li>
+              <li>JavaScript</li>
+              <li>Angular</li>
+            </ul>
+
+            <div class="work__links">
+              <a href="https://nisar.surge.sh" target="_blank" class="link__text">
+                Visitar <span>&rarr;</span>
+              </a>
+              <a href="https://github.com/LorenaTr1" title="View Source Code" target="_blank">
+                <img src="/assets/images/github.svg" class="work__code" alt="GitHub">
+              </a>
+            </div>
+          </div>
+          <div class="work__image-box">
+            <img src="/assets/images/Foto1.jpg" class="work__image" alt="Project 1" />
+          </div>
+        </div>
+      </div> 
+    </div> 
+</section> -->
+<app-footer></app-footer>
+
+  

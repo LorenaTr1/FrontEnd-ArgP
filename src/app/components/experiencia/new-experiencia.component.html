@@ -1,0 +1,21 @@
+<div id="newexpl">
+    <div class="row">
+        <div class="container">
+            <div>
+                <form class="l2l" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombreE">Nom<span>bre de la emp</span>resa</label>
+                        <input type="text" class="form-control" name="nombreE" id="nombreE" style="font-size: 25px;" [(ngModel)]="nombreE" required>
+                    </div>
+                    <div class="form-group tw">
+                        <label for="descripcionE">Descripción de la tarea</label>
+                        <input type="text" class="form-control" name="descripcionE" style="font-size: 25px;" id="descripcionE" [(ngModel)]="descripcionE" required>
+                    </div>
+                    <button class="btn6">
+                        AGREGAR EXPERIENCIA
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

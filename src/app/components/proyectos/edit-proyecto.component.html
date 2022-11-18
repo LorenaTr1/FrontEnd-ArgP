@@ -1,0 +1,21 @@
+<div id="editproyecto">
+    <div class="row" *ngIf="proyecto">
+        <div class="container">
+            <div>
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombreE">NOMBRE <span>DEL</span> PROYECTO</label>
+                        <input type="text" class="form-control" name="nombreE" id="nombreE" [(ngModel)]="proyecto.nombreE" required>
+                    </div>
+                    <div class="form-group tw">
+                        <label for="descripcionE">ENLACE</label>
+                        <input type="text" class="form-control" name="descripcionE" id="descripcionE" [(ngModel)]="proyecto.descripcionE" required>
+                    </div>
+                    <button class="btn6">
+                        ACTUALIZAR
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

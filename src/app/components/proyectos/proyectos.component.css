@@ -1,0 +1,127 @@
+#proyectos h1{
+    font-size: 40px;
+}
+
+#proyectos h1::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 10rem;
+    background: rgb(82, 240, 82);
+}
+
+#proyectos .proyecto{
+    margin-top: 40px;
+}
+
+#proyectos .pyt2{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#proyectos .col-lg-2 .botonx{
+    background: rgba(255, 255, 255, 0); /* color de fondo */
+    color: rgb(82, 240, 82); /* color de fuente */
+    border: 2px solid rgb(82, 240, 82); /* tamaño y color de borde */
+    border-radius: 15px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    height: 30px;
+    width: 120px;
+}
+
+#proyectos .col-lg-2 .botonx:hover{
+    color: #000;
+}
+
+#proyectos .col-lg-2 .botonx::after{
+    content: "";
+    background: rgb(82, 240, 82); /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    transform: scale(0, 0);
+    transition: all 0.4s ease;
+}
+
+#proyectos .col-lg-2 .botonx:hover::after{
+    transition: all 0.6s ease-out;
+    transform: scale(1, 1);
+}
+
+#proyectos .all-proyectos{
+    margin-top: 40px;
+}
+
+#proyectos .pyt3{
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7e00, #11998e00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7e5b, #11998e73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+}
+
+#proyectos .pyt4{
+    display: flex;
+    flex-direction: row;
+}
+
+.iter{
+    margin-top: 20px;
+}
+
+#proyectos .flex{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 900px;
+    padding-left: 15px;
+}
+
+#proyectos .flex h3{
+    color: rgb(82, 240, 82);
+    font-size: 20px;
+}
+
+#proyectos .pyt4 a {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+#proyectos .pyt5{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#proyectos .pyt5 .btn-light{
+    width: 65px;
+    height: 23px;
+}
+
+@media (max-width: 575px){
+    #proyectos .pyt4{
+        display: flex;
+        flex-direction: column;
+    } 
+    #proyectos .pyt5{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #proyectos .flex{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: auto;
+        padding-left: 15px;
+    }
+}

@@ -1,0 +1,21 @@
+<div id="newhab">
+    <div class="row">
+        <div class="container">
+            <div>
+                <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombre">NUEVA <span>HABILIDAD</span></label>
+                        <input type="text" class="form-control" name="nombre" id="nombre" [(ngModel)]="nombre" required>
+                    </div>
+                    <div class="form-group tw">
+                        <label for="descripcionE">PORCENTAJE</label>
+                        <input type="text" class="form-control" name="porcentaje" id="porcentaje" [(ngModel)]="porcentaje" required>
+                    </div>
+                    <button class="btn6">
+                        AGREGAR HABILIDAD
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

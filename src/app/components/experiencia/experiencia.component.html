@@ -1,0 +1,37 @@
+  <section class="client" id="clients">
+    <app-menu></app-menu>
+    <div class="container edub">
+      <h2>Experiencia</h2>
+    </div>
+    <div id="experiencia">
+      <div class="container col-lg-2">
+          <button type="button" class="btn btn-primary" routerLink="/nuevaexp" *ngIf="isLogged">
+              Nueva Experiencia
+          </button>
+      </div>
+      
+      <div class="col-lg-1"></div>
+      <div class="container col-lg-11">
+          <table class="table">
+              <div>
+                  <div *ngFor="let Experiencia of expe">
+                      <div class="tw"><h3>{{Experiencia.nombreE | uppercase}}</h3></div>
+                      <div class="td1"><p>{{Experiencia.descripcionE}}</p></div>
+                      <div class="bim">
+                        <div *ngIf="isLogged" class="td2">
+                          <button class="btn" routerLink="/editexp/{{Experiencia.id}}">
+                            <i class="fa-solid fa-pen" style="padding-right: 8px;"></i>EDITAR</button>
+                          </div>
+                          
+                      <div *ngIf="isLogged" class="td3">
+                          <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                            <i class="fa-solid fa-trash-can" style="padding-right: 8px;"></i>BORRAR</button>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+          </table>
+      </div>
+  </div>
+</section>
+  <app-footer></app-footer>

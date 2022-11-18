@@ -1,0 +1,31 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark menu">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a routerLink="/inicio" class="nav-link text-light">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/proyectos" class="nav-link text-light">PROYECTOS</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/experiencia" class="nav-link text-light">EXPERIENCIA</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/educacion" class="nav-link text-light">EDUCACIÓN</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/contact" class="nav-link text-light">CONTACTO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="login" (click)="login()" *ngIf="!isLogged" style="color: rgb(83, 240, 82);">INGRESAR</a>
+          <a class="nav-link" routerLink="login" (click)="onLogOut()" *ngIf="isLogged" style="color: rgb(83, 240, 82);">CERRAR SESIÓN</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

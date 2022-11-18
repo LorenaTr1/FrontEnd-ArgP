@@ -1,0 +1,21 @@
+<div id="editexpl">
+    <div class="row" *ngIf="expLab">
+        <div class="container">
+            <div>
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombreE">Nom<span>bre de la emp</span>resa:  </label>
+                        <input type="text" class="form-control" name="nombreE" id="nombreE" style="font-size: 25px;" [(ngModel)]="expLab.nombreE" required>
+                    </div>
+                    <div class="form-group tw">
+                        <label for="descripcionE">Descripcion de la tarea:  </label>
+                        <input type="text" class="form-control" name="descripcionE" style="font-size: 25px;" id="descripcionE" [(ngModel)]="expLab.descripcionE" required>
+                    </div>
+                    <button class="btn6" style="font-size:15px; margin-top: 15px;">
+                        ACTUALIZAR
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

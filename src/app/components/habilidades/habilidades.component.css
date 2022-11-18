@@ -1,0 +1,32 @@
+#habilidades .habilidad-top h1{
+    font-size: 40px;
+}
+
+#habilidades .col-lg-2 button{
+    height: 30px;
+    background-color: rgba(82, 240, 82, 0.773);
+}
+
+#habilidades .col-lg-2 button:hover{
+    background-color: transparent;
+}
+
+#habilidades .hab{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#habilidades .circulo{
+    margin-top: 15px;
+}
+
+#habilidades .opt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+
+.btn-light:hover{
+    background-color: rgba(255, 255, 255, 0.839);
+}

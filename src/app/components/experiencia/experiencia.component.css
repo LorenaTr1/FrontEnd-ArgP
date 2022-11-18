@@ -1,0 +1,26 @@
+.tw{
+    text-align: center;
+}
+.tw h3{
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.td1{
+    text-align: center;
+}
+
+.td1 p{
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgb(82, 240, 82);
+}
+
+.bim{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

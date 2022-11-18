@@ -1,0 +1,15 @@
+@media (max-width: 1180px){
+    .nav-item{
+        font-size: 19px;
+    }
+}
+@media (max-width: 1140px){
+    .nav-item{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1118px){
+    .nav-item{
+        font-size: 15px;
+    }
+}
