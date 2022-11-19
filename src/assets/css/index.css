@@ -293,6 +293,11 @@ a:focus {
     transition: all 0.35s;
 }
 
+@media (max-width: 431px){
+    .header-text{
+        padding-right: 10px;
+    }
+}
 
 /* --------------------------------------- */
 /* ----- Work ----- */
